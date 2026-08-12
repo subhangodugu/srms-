@@ -1,0 +1,140 @@
+/* SROTS Layout — shell, surfaces, page structure, lists/trees */
+
+.srots-shell,
+.srots-main-window,
+.srots-app-shell {
+    -fx-background-color: -srots-bg;
+}
+
+.srots-content-host {
+    -fx-min-width: 480px;
+}
+
+.srots-surface {
+    -fx-background-color: -srots-surface;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+}
+
+.srots-surface-elevated {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+.srots-surface-hover:hover {
+    -fx-background-color: -srots-surface-hover;
+}
+
+.srots-bordered {
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+}
+
+.srots-bordered-strong {
+    -fx-border-color: -srots-border-strong;
+    -fx-border-width: 1px;
+}
+
+.srots-focused {
+    -fx-border-color: -srots-border-focus;
+}
+
+.srots-page {
+    -fx-background-color: -srots-bg;
+    -fx-padding: 24px;
+    -fx-spacing: 20px;
+}
+
+.srots-page-header {
+    -fx-spacing: 8px;
+    -fx-padding: 0 0 16px 0;
+}
+
+.srots-page-header-row {
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 16px;
+}
+
+.srots-page-description {
+    -fx-text-fill: -srots-text-secondary;
+    -fx-font-size: 13px;
+    -fx-wrap-text: true;
+}
+
+.srots-section {
+    -fx-spacing: 12px;
+    -fx-padding: 0 0 24px 0;
+}
+
+.srots-toolbar {
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 12px;
+    -fx-padding: 0 0 16px 0;
+}
+
+.srots-content-padding {
+    -fx-padding: 24px;
+}
+
+.srots-grid-gap {
+    -fx-hgap: 16px;
+    -fx-vgap: 16px;
+}
+
+/* List / Tree for organizational views */
+.srots-list-view,
+.list-view {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+.srots-list-cell,
+.list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: -srots-text-primary;
+    -fx-padding: 10px 12px;
+}
+
+.srots-list-cell:hover,
+.list-view .list-cell:hover {
+    -fx-background-color: -srots-surface-hover;
+}
+
+.srots-list-cell:selected,
+.list-view .list-cell:selected {
+    -fx-background-color: -srots-surface-selected;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-tree-view,
+.tree-view {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+.srots-tree-cell,
+.tree-view .tree-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: -srots-text-primary;
+    -fx-padding: 6px 8px;
+}
+
+.srots-tree-cell:hover,
+.tree-view .tree-cell:hover {
+    -fx-background-color: -srots-surface-hover;
+}
+
+.srots-tree-cell:selected,
+.tree-view .tree-cell:selected {
+    -fx-background-color: -srots-primary-soft;
+    -fx-text-fill: -srots-primary;
+}

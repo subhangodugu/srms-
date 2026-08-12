@@ -1,0 +1,935 @@
+/* SROTS Navigation — sidebar, topbar, statusbar, breadcrumbs */
+
+.srots-sidebar {
+    -fx-background-color: -srots-surface;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 0 1px 0 0;
+    -fx-min-width: -srots-sidebar-width;
+    -fx-pref-width: -srots-sidebar-width;
+    -fx-max-width: -srots-sidebar-width;
+}
+
+.srots-sidebar-collapsed {
+    -fx-min-width: -srots-sidebar-collapsed;
+    -fx-pref-width: -srots-sidebar-collapsed;
+    -fx-max-width: -srots-sidebar-collapsed;
+}
+
+.srots-sidebar-header,
+.srots-sidebar-brand {
+    -fx-border-color: -srots-border;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.srots-sidebar-brand-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-sidebar-brand-subtitle {
+    -fx-font-size: 11px;
+    -fx-text-fill: -srots-text-muted;
+}
+
+.srots-sidebar-nav {
+    -fx-spacing: 4px;
+}
+
+.srots-sidebar-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.srots-sidebar-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+.srots-sidebar-empty {
+    -fx-text-fill: -srots-text-muted;
+    -fx-font-size: 12px;
+    -fx-padding: 16px 8px;
+}
+
+.srots-sidebar-footer {
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px 0 0 0;
+    -fx-spacing: 6px;
+}
+
+.srots-sidebar-collapse-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: -srots-text-secondary;
+    -fx-padding: 8px 12px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-size: 12px;
+}
+
+.srots-sidebar-collapse-button:hover {
+    -fx-background-color: -srots-surface-hover;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-sidebar-collapse-button:focused {
+    -fx-border-color: -srots-primary;
+    -fx-border-width: 1px;
+}
+
+.srots-sidebar-group {
+    -fx-spacing: 2px;
+    -fx-padding: 4px 0 8px 0;
+}
+
+.srots-sidebar-group-toggle {
+    -fx-background-color: transparent;
+    -fx-padding: 8px 10px 4px 10px;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.srots-sidebar-group-toggle:hover {
+    -fx-background-color: -srots-surface-hover;
+}
+
+.srots-sidebar-group-header,
+.srots-nav-group-title {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -srots-text-muted;
+    -fx-padding: 0;
+}
+
+.srots-sidebar-group-chevron {
+    -fx-font-size: 10px;
+    -fx-text-fill: -srots-text-muted;
+}
+
+.srots-sidebar-item-icon {
+    -fx-min-width: 22px;
+    -fx-pref-width: 22px;
+    -fx-alignment: CENTER;
+    -fx-text-fill: -srots-text-secondary;
+    -fx-font-size: 13px;
+}
+
+.srots-sidebar-item-label {
+    -fx-text-fill: -srots-text-secondary;
+    -fx-font-size: 13px;
+}
+
+.srots-sidebar-item-badge {
+    -fx-background-color: -srots-danger;
+    -fx-text-fill: -srots-primary-on;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-min-width: 18px;
+    -fx-min-height: 18px;
+    -fx-padding: 1px 6px;
+    -fx-background-radius: -srots-radius-pill;
+    -fx-alignment: CENTER;
+}
+
+.srots-topbar {
+    -fx-background-color: -srots-bg;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 0 0 1px 0;
+    -fx-min-height: -srots-topbar-height;
+    -fx-pref-height: -srots-topbar-height;
+    -fx-max-height: -srots-topbar-height;
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 12px;
+}
+
+.srots-topbar-left {
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 12px;
+    -fx-min-width: 160px;
+}
+
+.srots-topbar-right {
+    -fx-alignment: CENTER_RIGHT;
+    -fx-spacing: 8px;
+}
+
+.srots-topbar-brand {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -srots-text-primary;
+    -fx-padding: 0;
+}
+
+.srots-topbar-divider {
+    -fx-background-color: -srots-border;
+    -fx-min-width: 1px;
+    -fx-pref-width: 1px;
+    -fx-max-width: 1px;
+    -fx-min-height: 22px;
+    -fx-pref-height: 22px;
+    -fx-max-height: 22px;
+}
+
+.srots-topbar-context {
+    -fx-spacing: 1px;
+    -fx-min-width: 100px;
+    -fx-max-width: 360px;
+}
+
+.srots-topbar-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-topbar-breadcrumb {
+    -fx-font-size: 12px;
+}
+
+.srots-topbar-mid .srots-topbar-context {
+    -fx-max-width: 220px;
+}
+
+.srots-topbar-search.srots-search-field {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 0 10px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-min-height: 38px;
+    -fx-pref-height: 38px;
+    -fx-max-height: 40px;
+    -fx-pref-width: 340px;
+    -fx-max-width: 380px;
+}
+
+.srots-topbar-search .srots-global-search {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 6px 4px;
+    -fx-pref-width: 1;
+    -fx-font-size: 13px;
+}
+
+.srots-topbar-search .srots-global-search:focused {
+    -fx-border-color: transparent;
+}
+
+.srots-search-leading-icon {
+    -fx-text-fill: -srots-text-muted;
+    -fx-font-size: 14px;
+    -fx-padding: 0 2px 0 0;
+}
+
+.srots-search-shortcut {
+    -fx-background-color: -srots-surface;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 4px;
+    -fx-border-radius: 4px;
+    -fx-text-fill: -srots-text-muted;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 2px 6px;
+}
+
+.srots-topbar-actions {
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 6px;
+}
+
+.srots-topbar-action {
+    -fx-background-color: transparent;
+    -fx-text-fill: -srots-text-secondary;
+    -fx-cursor: hand;
+    -fx-padding: 6px 8px;
+}
+
+.srots-topbar-action:hover {
+    -fx-background-color: -srots-surface-hover;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-topbar-action:focused {
+    -fx-border-color: -srots-primary;
+    -fx-border-width: 1px;
+}
+
+.srots-topbar .srots-icon-button.srots-topbar-action,
+.srots-topbar .srots-icon-button.srots-topbar-more,
+.srots-topbar .srots-icon-button.srots-topbar-compact-search,
+.srots-topbar .srots-icon-button.srots-topbar-notifications {
+    -fx-min-width: 36px;
+    -fx-pref-width: 36px;
+    -fx-max-width: 36px;
+    -fx-min-height: 36px;
+    -fx-pref-height: 36px;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 0;
+    -fx-font-size: 14px;
+}
+
+.srots-topbar .srots-icon-button.srots-topbar-action:hover,
+.srots-topbar .srots-icon-button.srots-topbar-more:hover,
+.srots-topbar .srots-icon-button.srots-topbar-compact-search:hover,
+.srots-topbar .srots-icon-button.srots-topbar-notifications:hover {
+    -fx-background-color: -srots-surface-hover;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-topbar-notification-slot {
+    -fx-alignment: CENTER;
+    -fx-min-width: 36px;
+    -fx-pref-width: 36px;
+    -fx-max-width: 36px;
+    -fx-min-height: 36px;
+    -fx-pref-height: 36px;
+    -fx-max-height: 36px;
+}
+
+.srots-topbar-notifications,
+.srots-topbar .srots-icon-button.srots-topbar-notifications {
+    -fx-min-width: 36px;
+    -fx-text-fill: -srots-text-secondary;
+    -fx-font-size: 14px;
+}
+
+.srots-topbar-notifications:open,
+.srots-topbar .srots-icon-button.srots-topbar-notifications:open {
+    -fx-background-color: -srots-surface-selected;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-topbar-notification-badge {
+    -fx-background-color: -srots-danger;
+    -fx-text-fill: -srots-primary-on;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-min-width: 16px;
+    -fx-min-height: 16px;
+    -fx-padding: 0 5px;
+    -fx-background-radius: 8px;
+    -fx-alignment: CENTER;
+    -fx-translate-x: 10;
+    -fx-translate-y: -4;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.35), 4, 0.2, 0, 1);
+}
+
+.srots-notification-panel {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.28), 12, 0.15, 0, 3);
+}
+
+.srots-notification-panel-header {
+    -fx-padding: 0 0 4px 0;
+}
+
+.srots-notification-panel-title {
+    -fx-text-fill: -srots-text-primary;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.srots-notification-panel-unread {
+    -fx-text-fill: -srots-text-muted;
+    -fx-font-size: 12px;
+}
+
+.srots-notification-filters {
+    -fx-spacing: 8px;
+}
+
+.srots-notification-filter:selected {
+    -fx-background-color: -srots-surface-selected;
+}
+
+.srots-notification-list {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.srots-notification-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.srots-notification-list .list-cell:filled:selected,
+.srots-notification-list .list-cell:filled:hover {
+    -fx-background-color: transparent;
+}
+
+.srots-notification-list .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 10px;
+}
+
+.srots-notification-list .scroll-bar:vertical .thumb {
+    -fx-background-color: -srots-border-strong;
+    -fx-background-radius: 6px;
+}
+
+.srots-notification-item {
+    -fx-background-color: transparent;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.srots-notification-item:hover,
+.srots-notification-item:focused {
+    -fx-background-color: -srots-surface-hover;
+}
+
+.srots-notification-item:pressed {
+    -fx-background-color: -srots-surface-selected;
+}
+
+.srots-notification-item:unread {
+    -fx-background-color: -srots-surface;
+}
+
+.srots-notification-item:unread:hover {
+    -fx-background-color: -srots-surface-hover;
+}
+
+.srots-notification-item:critical .srots-notification-title {
+    -fx-text-fill: -srots-warning;
+}
+
+.srots-notification-unread-dot {
+    -fx-text-fill: -srots-primary;
+    -fx-font-size: 8px;
+}
+
+.srots-notification-icon {
+    -fx-text-fill: -srots-text-secondary;
+    -fx-font-size: 14px;
+    -fx-min-width: 18px;
+}
+
+.srots-notification-title {
+    -fx-text-fill: -srots-text-primary;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.srots-notification-message {
+    -fx-text-fill: -srots-text-secondary;
+    -fx-font-size: 12px;
+}
+
+.srots-notification-time {
+    -fx-text-fill: -srots-text-muted;
+    -fx-font-size: 11px;
+}
+
+.srots-notification-empty,
+.srots-notification-error {
+    -fx-padding: 24px;
+}
+
+.srots-notification-panel-footer {
+    -fx-padding: 4px 0 0 0;
+}
+
+.srots-notification-mark-all {
+    -fx-font-size: 12px;
+}
+
+.srots-topbar-connection {
+    -fx-font-size: 12px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 6px;
+    -fx-padding: 4px 6px;
+    -fx-background-radius: 6px;
+}
+
+.srots-connection-indicator {
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 6px;
+}
+
+.srots-connection-dot {
+    -fx-min-width: 8px;
+    -fx-pref-width: 8px;
+    -fx-max-width: 8px;
+    -fx-min-height: 8px;
+    -fx-pref-height: 8px;
+    -fx-max-height: 8px;
+    -fx-background-radius: 4px;
+    -fx-background-color: -srots-text-muted;
+}
+
+.srots-connection-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: -srots-text-secondary;
+}
+
+.srots-online .srots-connection-dot {
+    -fx-background-color: -srots-success;
+}
+
+.srots-online .srots-connection-label {
+    -fx-text-fill: -srots-success;
+    -fx-font-weight: bold;
+}
+
+.srots-offline .srots-connection-dot,
+.srots-sync-error .srots-connection-dot {
+    -fx-background-color: -srots-danger;
+}
+
+.srots-offline .srots-connection-label,
+.srots-sync-error .srots-connection-label {
+    -fx-text-fill: -srots-danger;
+    -fx-font-weight: bold;
+}
+
+.srots-syncing .srots-connection-dot {
+    -fx-background-color: -srots-warning;
+}
+
+.srots-syncing .srots-connection-label {
+    -fx-text-fill: -srots-warning;
+    -fx-font-weight: bold;
+}
+
+.srots-connection-unknown .srots-connection-dot {
+    -fx-background-color: -srots-text-muted;
+}
+
+.srots-connection-unknown .srots-connection-label {
+    -fx-text-fill: -srots-text-muted;
+}
+
+.srots-topbar-profile {
+    -fx-cursor: hand;
+    -fx-padding: 2px 6px;
+    -fx-background-radius: 6px;
+    -fx-spacing: 8px;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.srots-topbar-profile .srots-avatar {
+    -fx-min-width: 34px;
+    -fx-pref-width: 34px;
+    -fx-max-width: 34px;
+    -fx-min-height: 34px;
+    -fx-pref-height: 34px;
+    -fx-max-height: 34px;
+}
+
+.srots-topbar-profile .srots-user-name {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-topbar-profile .srots-user-role {
+    -fx-font-size: 11px;
+    -fx-text-fill: -srots-text-muted;
+}
+
+.srots-topbar-profile:hover,
+.srots-user-profile-button:hover {
+    -fx-background-color: -srots-surface-hover;
+}
+
+.srots-user-profile-button:focused {
+    -fx-border-color: -srots-border-focus;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+}
+
+.srots-user-profile-button:open {
+    -fx-background-color: -srots-surface-selected;
+}
+
+.srots-user-profile-chevron {
+    -fx-text-fill: -srots-text-muted;
+    -fx-font-size: 10px;
+    -fx-padding: 0 2px 0 4px;
+}
+
+.srots-user-profile-menu {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.28), 10, 0.15, 0, 3);
+}
+
+.srots-user-profile-header {
+    -fx-spacing: 4px;
+    -fx-padding: 4px 4px 8px 4px;
+}
+
+.srots-user-profile-header .srots-user-name {
+    -fx-text-fill: -srots-text-primary;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.srots-user-profile-header .srots-user-role,
+.srots-user-profile-header .srots-user-email {
+    -fx-text-fill: -srots-text-muted;
+    -fx-font-size: 12px;
+}
+
+.srots-user-menu-section {
+    -fx-spacing: 2px;
+}
+
+.srots-user-menu-item {
+    -fx-background-color: transparent;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.srots-user-menu-item:hover,
+.srots-user-menu-item:focused {
+    -fx-background-color: -srots-surface-hover;
+}
+
+.srots-user-menu-item:pressed {
+    -fx-background-color: -srots-surface-selected;
+}
+
+.srots-user-menu-item:disabled {
+    -fx-opacity: 0.55;
+}
+
+.srots-user-menu-icon {
+    -fx-text-fill: -srots-text-secondary;
+    -fx-font-size: 14px;
+    -fx-min-width: 18px;
+    -fx-alignment: CENTER;
+}
+
+.srots-user-menu-label {
+    -fx-text-fill: -srots-text-primary;
+    -fx-font-size: 13px;
+}
+
+.srots-user-menu-divider {
+    -fx-padding: 4px 0;
+}
+
+.srots-user-menu-signout .srots-user-menu-label {
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-user-menu-signout .srots-user-menu-icon {
+    -fx-text-fill: -srots-warning;
+}
+
+.srots-topbar-env {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 3px 8px;
+    -fx-background-radius: 999px;
+    -fx-border-radius: 999px;
+    -fx-border-width: 1px;
+    -fx-border-color: -srots-border;
+    -fx-background-color: -srots-surface-elevated;
+    -fx-text-fill: -srots-text-secondary;
+}
+
+.srots-topbar-env.srots-env-dev {
+    -fx-background-color: -srots-info-soft;
+    -fx-border-color: -srots-info;
+    -fx-text-fill: -srots-info;
+}
+
+.srots-topbar-env.srots-env-staging {
+    -fx-background-color: -srots-warning-soft;
+    -fx-border-color: -srots-warning;
+    -fx-text-fill: -srots-warning;
+}
+
+.srots-topbar-env.srots-env-prod {
+    -fx-background-color: -srots-success-soft;
+    -fx-border-color: -srots-success;
+    -fx-text-fill: -srots-success;
+}
+
+.srots-topbar-env.srots-env-other {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-text-fill: -srots-text-secondary;
+}
+
+.srots-window-controls {
+    -fx-alignment: CENTER_RIGHT;
+    -fx-spacing: 4px;
+    -fx-padding: 0 0 0 8px;
+}
+
+.srots-window-control {
+    -fx-min-width: 36px;
+    -fx-pref-width: 36px;
+    -fx-max-width: 36px;
+    -fx-min-height: 36px;
+    -fx-pref-height: 36px;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    /* Literal size: JavaFX looked-up radius tokens resolve as Double and break CornerRadiiConverter. */
+    -fx-background-radius: 6px;
+    -fx-text-fill: -srots-text-primary;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-padding: 0;
+}
+
+.srots-window-control:hover {
+    -fx-background-color: -srots-surface-hover;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-window-control.srots-window-control-close {
+    -fx-background-color: -srots-danger;
+    -fx-text-fill: -srots-primary-on;
+    -fx-background-radius: 6px;
+}
+
+.srots-window-control.srots-window-control-close:hover {
+    -fx-background-color: -srots-danger-soft;
+    -fx-text-fill: -srots-primary-on;
+}
+
+.srots-window-control.srots-window-control-close:pressed {
+    -fx-opacity: 0.85;
+}
+
+.srots-connection-unknown {
+    -fx-text-fill: -srots-text-muted;
+}
+
+.srots-nav-item,
+.srots-sidebar-item {
+    -fx-background-color: transparent;
+    -fx-text-fill: -srots-text-secondary;
+    -fx-padding: 8px 10px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-border-color: transparent;
+    -fx-border-width: 0 0 0 3px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-cursor: hand;
+    -fx-font-size: 13px;
+}
+
+.srots-nav-item:hover,
+.srots-sidebar-item:hover {
+    -fx-background-color: -srots-surface-hover;
+}
+
+.srots-nav-item:hover .srots-sidebar-item-label,
+.srots-nav-item:hover .srots-sidebar-item-icon {
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-nav-item:focused,
+.srots-sidebar-item:focused {
+    -fx-border-color: -srots-primary;
+}
+
+.srots-nav-item:disabled,
+.srots-sidebar-item:disabled,
+.srots-sidebar-item.disabled {
+    -fx-opacity: 0.45;
+}
+
+.srots-nav-item-active,
+.srots-nav-item:selected,
+.srots-nav-item:active,
+.srots-sidebar-active,
+.srots-sidebar-item:active {
+    -fx-background-color: -srots-primary-soft;
+    -fx-border-color: -srots-primary;
+    -fx-border-width: 0 0 0 3px;
+}
+
+.srots-nav-item-active .srots-sidebar-item-label,
+.srots-sidebar-active .srots-sidebar-item-label,
+.srots-nav-item-active .srots-sidebar-item-icon,
+.srots-sidebar-active .srots-sidebar-item-icon {
+    -fx-text-fill: -srots-primary;
+    -fx-font-weight: bold;
+}
+
+.srots-nav-group,
+.srots-nav-group-title {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -srots-text-muted;
+}
+
+.srots-breadcrumb,
+.srots-page-context {
+    -fx-text-fill: -srots-text-muted;
+    -fx-font-size: 12px;
+}
+
+.srots-breadcrumb-separator {
+    -fx-text-fill: -srots-text-disabled;
+    -fx-font-size: 12px;
+    -fx-padding: 0 2px;
+}
+
+.srots-breadcrumb-link {
+    -fx-text-fill: -srots-text-muted;
+    -fx-font-size: 12px;
+    -fx-underline: false;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.srots-breadcrumb-link:hover {
+    -fx-text-fill: -srots-text-secondary;
+}
+
+.srots-breadcrumb-current {
+    -fx-text-fill: -srots-text-primary;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.srots-global-search {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-text-fill: -srots-text-primary;
+    -fx-prompt-text-fill: -srots-text-muted;
+    -fx-padding: 6px 12px;
+    -fx-pref-width: 240px;
+}
+
+.srots-global-search:focused {
+    -fx-border-color: -srots-primary;
+}
+
+.srots-topbar-action {
+    -fx-background-color: transparent;
+    -fx-text-fill: -srots-text-secondary;
+    -fx-cursor: hand;
+    -fx-padding: 6px 10px;
+}
+
+.srots-topbar-action:hover {
+    -fx-background-color: -srots-surface-hover;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-connection-status,
+.srots-connection-online,
+.srots-sync-status,
+.srots-version-status {
+    -fx-font-size: 12px;
+}
+
+.srots-statusbar,
+.srots-status-bar {
+    -fx-background-color: -srots-surface;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px 0 0 0;
+    -fx-min-height: 28px;
+    -fx-pref-height: -srots-statusbar-height;
+    -fx-max-height: -srots-statusbar-height;
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 12px;
+}
+
+.srots-status-left,
+.srots-status-center,
+.srots-status-right {
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 8px;
+}
+
+.srots-status-right {
+    -fx-alignment: CENTER_RIGHT;
+}
+
+.srots-status-connection,
+.srots-status-indicator {
+    -fx-font-size: 12px;
+}
+
+.srots-status-activity {
+    -fx-font-size: 12px;
+    -fx-text-fill: -srots-text-secondary;
+}
+
+.srots-status-environment,
+.srots-status-version {
+    -fx-font-size: 12px;
+    -fx-text-fill: -srots-text-muted;
+}
+
+.srots-status-progress {
+    -fx-pref-height: 4px;
+    -fx-max-height: 4px;
+}
+
+.srots-status-progress-indeterminate {
+    -fx-pref-width: 14px;
+    -fx-pref-height: 14px;
+}
+
+.srots-status-bar:ready .srots-status-activity,
+.srots-status-ready .srots-status-activity {
+    -fx-text-fill: -srots-text-secondary;
+}
+
+.srots-status-bar:busy .srots-status-activity,
+.srots-status-busy .srots-status-activity,
+.srots-status-bar:syncing .srots-status-activity,
+.srots-status-syncing .srots-status-activity {
+    -fx-text-fill: -srots-info;
+}
+
+.srots-status-bar:offline .srots-status-activity,
+.srots-status-offline .srots-status-activity,
+.srots-status-bar:degraded .srots-status-activity,
+.srots-status-degraded .srots-status-activity {
+    -fx-text-fill: -srots-warning;
+}
+
+.srots-status-bar:error .srots-status-activity,
+.srots-status-error .srots-status-activity {
+    -fx-text-fill: -srots-danger;
+}
+
+.srots-connection-online {
+    -fx-text-fill: -srots-success;
+    -fx-font-weight: bold;
+}
+
+.srots-connection-offline {
+    -fx-text-fill: -srots-warning;
+    -fx-font-weight: bold;
+}
+
+.srots-connection-syncing {
+    -fx-text-fill: -srots-info;
+    -fx-font-weight: bold;
+}

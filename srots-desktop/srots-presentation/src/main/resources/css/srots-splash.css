@@ -1,0 +1,81 @@
+/* SROTS Splash — uses design tokens from tokens.css / ThemeLoader */
+.srots-splash {
+    -fx-background-color: -srots-bg;
+}
+
+.srots-splash-container {
+    -fx-background-color: -srots-surface;
+    -fx-background-radius: 12;
+    -fx-border-color: -srots-border;
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+    -fx-spacing: 12;
+}
+
+.srots-splash-logo {
+    -fx-effect: null;
+}
+
+.srots-splash-logo-fallback {
+    -fx-font-size: 28px;
+    -fx-font-weight: 700;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-splash-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: 700;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-splash-subtitle {
+    -fx-font-size: 13px;
+    -fx-text-fill: -srots-text-secondary;
+}
+
+.srots-splash-badge {
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -srots-warning;
+    -fx-padding: 2 8 2 8;
+    -fx-background-color: -srots-warning-soft;
+    -fx-background-radius: 4;
+}
+
+.srots-splash-status {
+    -fx-font-size: 13px;
+    -fx-text-fill: -srots-text-secondary;
+    -fx-padding: 8 0 0 0;
+}
+
+.srots-splash-progress {
+    -fx-pref-height: 8;
+    -fx-background-radius: 4;
+    -fx-accent: -srots-primary;
+}
+
+.srots-splash-progress .bar {
+    -fx-background-radius: 4;
+    -fx-background-color: -srots-primary;
+}
+
+.srots-splash-progress .track {
+    -fx-background-radius: 4;
+    -fx-background-color: -srots-surface-hover;
+}
+
+.srots-splash-version {
+    -fx-font-size: 11px;
+    -fx-text-fill: -srots-text-muted;
+}
+
+.srots-splash-error {
+    -fx-font-size: 12px;
+    -fx-text-fill: -srots-danger;
+    -fx-padding: 4 0 0 0;
+}
+
+.srots-splash-retry,
+.srots-splash-exit {
+    -fx-min-width: 88;
+}

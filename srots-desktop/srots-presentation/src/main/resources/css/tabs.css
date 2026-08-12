@@ -1,0 +1,51 @@
+/* SROTS Tabs */
+
+.srots-tabs .tab-header-area {
+    -fx-padding: 0 0 12px 0;
+}
+
+.srots-tabs .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.srots-tab,
+.srots-tabs .tab {
+    -fx-background-color: transparent;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-border-width: 0 0 2px 0;
+}
+
+.srots-tab .tab-label,
+.srots-tabs .tab .tab-label {
+    -fx-text-fill: -srots-text-secondary;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.srots-tab:hover .tab-label,
+.srots-tabs .tab:hover .tab-label {
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-tab:selected,
+.srots-tabs .tab:selected {
+    -fx-background-color: transparent;
+    -fx-border-color: -srots-primary;
+    -fx-border-width: 0 0 2px 0;
+}
+
+.srots-tab:selected .tab-label,
+.srots-tabs .tab:selected .tab-label {
+    -fx-text-fill: -srots-primary;
+}
+
+.srots-tab:focused,
+.srots-tabs .tab:focused {
+    -fx-border-color: -srots-primary;
+}
+
+.srots-tabs .tab-content-area {
+    -fx-background-color: transparent;
+}

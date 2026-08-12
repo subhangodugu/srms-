@@ -1,0 +1,91 @@
+/* SROTS Chart Series — semantic design-system colors only */
+
+.chart {
+    -fx-background-color: transparent;
+    -fx-padding: 8px;
+}
+
+.chart-title {
+    -fx-text-fill: -srots-text-primary;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.chart-vertical-grid-lines,
+.chart-horizontal-grid-lines {
+    -fx-stroke: -srots-border;
+}
+
+.chart-alternative-row-fill {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+}
+
+.axis {
+    -fx-tick-label-fill: -srots-text-muted;
+}
+
+.axis-label {
+    -fx-text-fill: -srots-text-secondary;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+}
+
+.chart-legend-item {
+    -fx-text-fill: -srots-text-secondary;
+}
+
+.chart-series-line {
+    -fx-stroke-width: 2px;
+}
+
+.default-color0.chart-series-line { -fx-stroke: -srots-chart-1; }
+.default-color1.chart-series-line { -fx-stroke: -srots-chart-2; }
+.default-color2.chart-series-line { -fx-stroke: -srots-chart-3; }
+.default-color3.chart-series-line { -fx-stroke: -srots-chart-4; }
+.default-color4.chart-series-line { -fx-stroke: -srots-chart-5; }
+
+.default-color0.chart-bar { -fx-bar-fill: -srots-chart-1; }
+.default-color1.chart-bar { -fx-bar-fill: -srots-chart-2; }
+.default-color2.chart-bar { -fx-bar-fill: -srots-chart-3; }
+.default-color3.chart-bar { -fx-bar-fill: -srots-chart-4; }
+.default-color4.chart-bar { -fx-bar-fill: -srots-chart-5; }
+
+.default-color0.chart-pie { -fx-pie-color: -srots-chart-1; }
+.default-color1.chart-pie { -fx-pie-color: -srots-chart-2; }
+.default-color2.chart-pie { -fx-pie-color: -srots-chart-3; }
+.default-color3.chart-pie { -fx-pie-color: -srots-chart-4; }
+.default-color4.chart-pie { -fx-pie-color: -srots-chart-5; }
+
+.srots-chart-host {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 16px;
+}
+
+.srots-chart-bar {
+    -fx-fill: -srots-primary;
+}
+
+.srots-chart-bar-success { -fx-fill: -srots-success; }
+.srots-chart-bar-warning { -fx-fill: -srots-warning; }
+.srots-chart-bar-danger { -fx-fill: -srots-danger; }
+.srots-chart-bar-info { -fx-fill: -srots-info; }
+.srots-chart-bar-neutral { -fx-fill: -srots-chart-neutral; }
+
+.srots-chart-donut-track {
+    -fx-stroke: -srots-border-strong;
+}
+
+.srots-chart-donut-value {
+    -fx-stroke: -srots-primary;
+}

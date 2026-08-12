@@ -1,0 +1,98 @@
+/* SROTS Global Base — root, app chrome, scrollbars, focus defaults */
+
+.root {
+    -fx-font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 13px;
+    -fx-background-color: -srots-bg;
+    -fx-text-fill: -srots-text-primary;
+    -fx-focus-color: -srots-primary;
+    -fx-faint-focus-color: transparent;
+    -fx-accent: -srots-primary;
+}
+
+.srots-app,
+.srots-content,
+.srots-main {
+    -fx-background-color: -srots-bg;
+}
+
+.srots-separator {
+    -fx-background-color: -srots-border;
+}
+
+.srots-clickable {
+    -fx-cursor: hand;
+}
+
+.srots-pref-width-sm {
+    -fx-pref-width: 220px;
+}
+
+.srots-toast-tray {
+    -fx-padding: 16px;
+}
+
+/* Dark scrollbars — thin, usable, low noise */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical,
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-pref-width: 10px;
+    -fx-pref-height: 10px;
+}
+
+.scroll-bar:vertical .thumb,
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: -srots-border-strong;
+    -fx-background-radius: 6px;
+}
+
+.scroll-bar:vertical .thumb:hover,
+.scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: -srots-text-muted;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: transparent;
+}
+
+/* Global focus for standard controls */
+.button:focused,
+.toggle-button:focused,
+.text-field:focused,
+.password-field:focused,
+.text-area:focused,
+.combo-box-base:focused,
+.choice-box:focused,
+.check-box:focused,
+.radio-button:focused,
+.hyperlink:focused,
+.srots-focusable:focused {
+    -fx-border-color: -srots-primary;
+}
+
+.split-pane,
+.srots-split-pane {
+    -fx-background-color: -srots-bg;
+}
+
+.split-pane > .split-pane-divider,
+.srots-split-pane > .split-pane-divider {
+    -fx-background-color: -srots-border;
+    -fx-padding: 0 1px 0 1px;
+}

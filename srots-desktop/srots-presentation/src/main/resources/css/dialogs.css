@@ -1,0 +1,37 @@
+/* SROTS Dialogs & Detail Panels */
+
+.srots-dialog {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border-strong;
+    -fx-border-width: 1px;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-padding: 24px;
+}
+
+.srots-dialog-header {
+    -fx-padding: 0 0 16px 0;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 0 0 1px 0;
+    -fx-spacing: 8px;
+}
+
+.srots-dialog-content {
+    -fx-padding: 16px 0;
+    -fx-spacing: 12px;
+}
+
+.srots-dialog-footer {
+    -fx-padding: 16px 0 0 0;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px 0 0 0;
+    -fx-spacing: 12px;
+    -fx-alignment: CENTER_RIGHT;
+}
+
+.srots-detail-panel {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 0 0 0 1px;
+    -fx-padding: 20px;
+}

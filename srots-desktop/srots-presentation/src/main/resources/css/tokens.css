@@ -1,0 +1,79 @@
+/* SROTS Design System — JavaFX Looked-Up Color & Size Tokens */
+/* Single source of truth. Screens must not hard-code hex colors. */
+
+.root {
+    /* Backgrounds — premium enterprise dark */
+    -srots-bg: #080B12;
+    -srots-surface: #0D111A;
+    -srots-surface-elevated: #151C29;
+    -srots-surface-hover: #1A2333;
+    -srots-surface-selected: #222C40;
+
+    /* Borders */
+    -srots-border: #263244;
+    -srots-border-strong: #344155;
+    -srots-border-focus: #6D5CE7;
+
+    /* Text */
+    -srots-text-primary: #F8FAFC;
+    -srots-text-secondary: #94A3B8;
+    -srots-text-muted: #64748B;
+    -srots-text-disabled: #475569;
+
+    /* Brand — controlled purple accent */
+    -srots-primary: #6D5CE7;
+    -srots-primary-hover: #806FF0;
+    -srots-primary-pressed: #5B4BD1;
+    -srots-primary-soft: #1E1A3D;
+    -srots-primary-on: #FFFFFF;
+
+    /* Semantic + soft surfaces (solid JavaFX-compatible colors) */
+    -srots-success: #22C55E;
+    -srots-success-soft: #14532D;
+
+    -srots-warning: #F59E0B;
+    -srots-warning-soft: #78350F;
+
+    -srots-danger: #EF4444;
+    -srots-danger-soft: #7F1D1D;
+
+    -srots-info: #38BDF8;
+    -srots-info-soft: #0C4A6E;
+
+    /* Chart series (semantic only) */
+    -srots-chart-1: #6D5CE7;
+    -srots-chart-2: #22C55E;
+    -srots-chart-3: #F59E0B;
+    -srots-chart-4: #EF4444;
+    -srots-chart-5: #38BDF8;
+    -srots-chart-neutral: #94A3B8;
+
+    /* Radii — restrained enterprise */
+    -srots-radius-sm: 4px;
+    -srots-radius-md: 6px;
+    -srots-radius-lg: 8px;
+    -srots-radius-pill: 999px;
+
+    /* Spacing scale (4px grid) */
+    -srots-space-1: 4px;
+    -srots-space-2: 8px;
+    -srots-space-3: 12px;
+    -srots-space-4: 16px;
+    -srots-space-5: 20px;
+    -srots-space-6: 24px;
+    -srots-space-8: 32px;
+    -srots-space-10: 40px;
+    -srots-space-12: 48px;
+
+    /* Density */
+    -srots-row-compact: 36px;
+    -srots-row-standard: 44px;
+    -srots-row-comfortable: 52px;
+
+    /* Shell metrics */
+    -srots-sidebar-width: 260px;
+    -srots-sidebar-collapsed: 68px;
+    -srots-topbar-height: 60px;
+    -srots-statusbar-height: 32px;
+    -srots-content-padding: 24px;
+}

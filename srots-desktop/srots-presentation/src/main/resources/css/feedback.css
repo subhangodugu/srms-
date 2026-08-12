@@ -1,0 +1,173 @@
+/* SROTS Feedback — toast, alert, progress, tooltip, badges */
+
+.srots-toast {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 12px 16px;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-toast-success {
+    -fx-border-color: -srots-success;
+    -fx-background-color: -srots-success-soft;
+    -fx-text-fill: -srots-success;
+}
+
+.srots-toast-warning {
+    -fx-border-color: -srots-warning;
+    -fx-background-color: -srots-warning-soft;
+    -fx-text-fill: -srots-warning;
+}
+
+.srots-toast-error {
+    -fx-border-color: -srots-danger;
+    -fx-background-color: -srots-danger-soft;
+    -fx-text-fill: -srots-danger;
+}
+
+.srots-toast-info {
+    -fx-border-color: -srots-info;
+    -fx-background-color: -srots-info-soft;
+    -fx-text-fill: -srots-info;
+}
+
+.srots-alert {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-width: 1px;
+    -fx-border-color: -srots-border;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 14px 18px;
+}
+
+.srots-alert-success {
+    -fx-border-color: -srots-success;
+    -fx-background-color: -srots-success-soft;
+}
+
+.srots-alert-warning {
+    -fx-border-color: -srots-warning;
+    -fx-background-color: -srots-warning-soft;
+}
+
+.srots-alert-danger {
+    -fx-border-color: -srots-danger;
+    -fx-background-color: -srots-danger-soft;
+}
+
+.srots-alert-info {
+    -fx-border-color: -srots-info;
+    -fx-background-color: -srots-info-soft;
+}
+
+.srots-progress .bar {
+    -fx-background-color: -srots-primary;
+    -fx-background-radius: 999px;
+}
+
+.srots-progress .track {
+    -fx-background-color: -srots-surface;
+    -fx-background-radius: 999px;
+}
+
+.srots-tooltip,
+.tooltip {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border-strong;
+    -fx-text-fill: -srots-text-primary;
+    -fx-font-size: 11px;
+    -fx-padding: 6px 10px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+}
+
+.srots-badge,
+.srots-badge-success,
+.srots-badge-warning,
+.srots-badge-danger,
+.srots-badge-info,
+.srots-badge-neutral,
+.srots-badge-primary,
+.badge-success,
+.badge-warning,
+.badge-danger,
+.badge-info {
+    -fx-padding: 4px 10px;
+    -fx-background-radius: 999px;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.srots-badge-success,
+.badge-success {
+    -fx-background-color: -srots-success-soft;
+    -fx-text-fill: -srots-success;
+}
+
+.srots-badge-warning,
+.badge-warning {
+    -fx-background-color: -srots-warning-soft;
+    -fx-text-fill: -srots-warning;
+}
+
+.srots-badge-danger,
+.badge-danger {
+    -fx-background-color: -srots-danger-soft;
+    -fx-text-fill: -srots-danger;
+}
+
+.srots-badge-info,
+.badge-info {
+    -fx-background-color: -srots-info-soft;
+    -fx-text-fill: -srots-info;
+}
+
+.srots-badge-primary {
+    -fx-background-color: -srots-primary-soft;
+    -fx-text-fill: -srots-primary;
+}
+
+.srots-badge-neutral {
+    -fx-background-color: -srots-surface;
+    -fx-text-fill: -srots-text-secondary;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+}
+
+.srots-release-gate {
+    -fx-spacing: 4px;
+    -fx-padding: 8px 0;
+}
+
+.srots-release-gate-step {
+    -fx-text-fill: -srots-text-secondary;
+    -fx-font-size: 13px;
+}
+
+.srots-release-gate-done {
+    -fx-text-fill: -srots-success;
+    -fx-font-weight: bold;
+}
+
+.srots-release-gate-warn {
+    -fx-text-fill: -srots-warning;
+    -fx-font-weight: bold;
+}
+
+.srots-release-gate-pending {
+    -fx-text-fill: -srots-text-muted;
+}
+
+.srots-avatar-face {
+    -fx-background-color: -srots-primary-soft;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+}
+
+.srots-avatar-initials {
+    -fx-text-fill: -srots-primary;
+    -fx-font-weight: bold;
+}

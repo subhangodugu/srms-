@@ -1,0 +1,93 @@
+/* SROTS Cards & KPI Cards */
+
+.srots-card {
+    -fx-background-color: -srots-surface;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-padding: 16px;
+}
+
+.srots-card-header {
+    -fx-padding: 0 0 12px 0;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.srots-card-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-card-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: -srots-text-muted;
+}
+
+.srots-card-content {
+    -fx-padding: 8px 0;
+}
+
+.srots-card-footer {
+    -fx-padding: 12px 0 0 0;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px 0 0 0;
+}
+
+.srots-kpi-card {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 16px;
+    -fx-min-height: 110px;
+    -fx-pref-height: 110px;
+    -fx-spacing: 8px;
+}
+
+.srots-kpi-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: -srots-text-secondary;
+    -fx-font-weight: bold;
+}
+
+.srots-kpi-value {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-kpi-trend {
+    -fx-font-size: 11px;
+    -fx-text-fill: -srots-success;
+}
+
+.srots-kpi-trend-down {
+    -fx-font-size: 11px;
+    -fx-text-fill: -srots-danger;
+}
+
+.srots-kpi-trend-neutral,
+.srots-kpi-supporting {
+    -fx-font-size: 11px;
+    -fx-text-fill: -srots-text-muted;
+}
+
+.srots-info-card {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 16px;
+    -fx-spacing: 8px;
+}
+
+.srots-kpi-row {
+    -fx-hgap: 16px;
+    -fx-vgap: 16px;
+    -fx-alignment: CENTER_LEFT;
+}

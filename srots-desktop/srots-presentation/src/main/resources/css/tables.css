@@ -1,0 +1,95 @@
+/* SROTS Table Theme */
+
+.srots-table,
+.table-view {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-table-cell-border-color: transparent;
+}
+
+.srots-table .column-header-background,
+.table-view .column-header-background {
+    -fx-background-color: -srots-surface;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.srots-table .column-header,
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+    -fx-border-color: transparent;
+}
+
+.srots-table .column-header .label,
+.table-view .column-header .label {
+    -fx-text-fill: -srots-text-secondary;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.srots-table .table-row-cell,
+.table-view .table-row-cell {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 0 0 1px 0;
+    -fx-cell-size: 44px;
+}
+
+.srots-table.srots-density-compact .table-row-cell,
+.srots-density-compact .table-row-cell {
+    -fx-cell-size: 36px;
+}
+
+.srots-table.srots-density-comfortable .table-row-cell,
+.srots-density-comfortable .table-row-cell {
+    -fx-cell-size: 52px;
+}
+
+.srots-table .table-row-cell:hover,
+.table-view .table-row-cell:hover {
+    -fx-background-color: -srots-surface-hover;
+}
+
+.srots-table .table-row-cell:selected,
+.table-view .table-row-cell:selected {
+    -fx-background-color: -srots-surface-selected;
+}
+
+.srots-table .table-row-cell:focused,
+.table-view .table-row-cell:focused {
+    -fx-background-color: -srots-surface-selected;
+}
+
+.srots-table .table-row-cell:disabled,
+.table-view .table-row-cell:disabled {
+    -fx-opacity: 0.45;
+}
+
+.srots-table .table-cell,
+.table-view .table-cell {
+    -fx-text-fill: -srots-text-primary;
+    -fx-font-size: 13px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-border-color: transparent;
+    -fx-padding: 0 12px;
+}
+
+.srots-table .placeholder .label,
+.table-view .placeholder .label {
+    -fx-text-fill: -srots-text-muted;
+}
+
+.srots-pagination {
+    -fx-alignment: CENTER_RIGHT;
+    -fx-spacing: 8px;
+    -fx-padding: 12px 0 0 0;
+}
+
+.srots-pagination-label {
+    -fx-text-fill: -srots-text-secondary;
+    -fx-font-size: 12px;
+}

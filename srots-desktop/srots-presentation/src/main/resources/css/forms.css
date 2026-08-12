@@ -1,0 +1,186 @@
+/* SROTS Form Controls — fields, combo, checkbox, toggle, validation */
+
+.srots-text-field,
+.srots-combo-box,
+.srots-text-area,
+.srots-date-picker,
+.srots-password-field {
+    -fx-background-color: -srots-surface;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-text-fill: -srots-text-primary;
+    -fx-prompt-text-fill: -srots-text-muted;
+    -fx-padding: 8px 12px;
+}
+
+.text-field,
+.password-field,
+.text-area,
+.combo-box-base,
+.date-picker {
+    -fx-background-color: -srots-surface;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-text-fill: -srots-text-primary;
+    -fx-prompt-text-fill: -srots-text-muted;
+}
+
+.text-field:hover,
+.password-field:hover,
+.text-area:hover,
+.combo-box-base:hover,
+.srots-text-field:hover,
+.srots-combo-box:hover,
+.srots-text-area:hover {
+    -fx-border-color: -srots-border-strong;
+}
+
+.text-field:focused,
+.password-field:focused,
+.text-area:focused,
+.combo-box-base:focused,
+.date-picker:focused,
+.srots-text-field:focused,
+.srots-combo-box:focused,
+.srots-text-area:focused,
+.srots-date-picker:focused,
+.srots-password-field:focused {
+    -fx-border-color: -srots-primary;
+}
+
+.text-field:disabled,
+.password-field:disabled,
+.text-area:disabled,
+.combo-box-base:disabled,
+.srots-text-field:disabled {
+    -fx-opacity: 0.55;
+    -fx-text-fill: -srots-text-disabled;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-text-fill: -srots-text-primary;
+    -fx-padding: 8px 12px;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: -srots-surface-hover;
+}
+
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: -srots-surface-selected;
+}
+
+.srots-form-label {
+    -fx-text-fill: -srots-text-secondary;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.srots-form-helper {
+    -fx-text-fill: -srots-text-muted;
+    -fx-font-size: 11px;
+}
+
+.srots-form-error {
+    -fx-text-fill: -srots-danger;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.srots-invalid,
+.srots-text-field.srots-invalid,
+.text-field.srots-invalid {
+    -fx-border-color: -srots-danger;
+}
+
+.srots-valid {
+    -fx-border-color: -srots-success;
+}
+
+.srots-warning {
+    -fx-border-color: -srots-warning;
+}
+
+.srots-form-field {
+    -fx-spacing: 6px;
+}
+
+.srots-filter-bar {
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 12px;
+    -fx-padding: 0 0 16px 0;
+}
+
+.srots-check-box,
+.check-box,
+.srots-radio-button,
+.radio-button {
+    -fx-text-fill: -srots-text-primary;
+}
+
+.check-box .box,
+.radio-button .radio,
+.srots-check-box .box {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 4px;
+}
+
+.check-box:hover .box,
+.radio-button:hover .radio {
+    -fx-border-color: -srots-border-strong;
+}
+
+.check-box:focused .box,
+.radio-button:focused .radio {
+    -fx-border-color: -srots-primary;
+}
+
+.check-box:selected .mark,
+.radio-button:selected .dot {
+    -fx-background-color: -srots-primary;
+}
+
+.check-box:disabled,
+.radio-button:disabled {
+    -fx-opacity: 0.45;
+}
+
+.srots-toggle,
+.toggle-button {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-text-fill: -srots-text-secondary;
+    -fx-background-radius: 999px;
+    -fx-border-radius: 999px;
+    -fx-padding: 6px 14px;
+}
+
+.srots-toggle:selected,
+.toggle-button:selected {
+    -fx-background-color: -srots-primary-soft;
+    -fx-border-color: -srots-primary;
+    -fx-text-fill: -srots-primary;
+}
+
+.srots-toggle:hover,
+.toggle-button:hover {
+    -fx-background-color: -srots-surface-hover;
+}
+
+.srots-toggle:disabled,
+.toggle-button:disabled {
+    -fx-opacity: 0.45;
+}

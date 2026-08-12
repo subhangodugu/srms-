@@ -1,0 +1,53 @@
+/* SROTS Component aliases, showcase swatches, metrics */
+
+.srots-chip {
+    -fx-background-color: -srots-surface;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 999px;
+    -fx-border-radius: 999px;
+    -fx-padding: 4px 12px;
+    -fx-text-fill: -srots-text-secondary;
+    -fx-font-size: 12px;
+}
+
+.srots-metric-label {
+    -fx-text-fill: -srots-text-muted;
+    -fx-font-size: 12px;
+}
+
+.srots-metric-value {
+    -fx-text-fill: -srots-text-primary;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.srots-showcase-section {
+    -fx-spacing: 12px;
+    -fx-padding: 0 0 32px 0;
+}
+
+.srots-showcase-swatch {
+    -fx-min-width: 110px;
+    -fx-min-height: 72px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+}
+
+.srots-swatch-label {
+    -fx-text-fill: -srots-text-primary;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.srots-swatch-bg { -fx-background-color: -srots-bg; }
+.srots-swatch-surface { -fx-background-color: -srots-surface; }
+.srots-swatch-elevated { -fx-background-color: -srots-surface-elevated; }
+.srots-swatch-border { -fx-background-color: -srots-border; }
+.srots-swatch-primary { -fx-background-color: -srots-primary; }
+.srots-swatch-success { -fx-background-color: -srots-success; }
+.srots-swatch-warning { -fx-background-color: -srots-warning; }
+.srots-swatch-danger { -fx-background-color: -srots-danger; }
+.srots-swatch-info { -fx-background-color: -srots-info; }

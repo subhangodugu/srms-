@@ -1,0 +1,105 @@
+/* SROTS Application States — loading, empty, error, offline/sync */
+
+.srots-loading {
+    -fx-opacity: 0.7;
+}
+
+.srots-spinner {
+    -fx-progress-color: -srots-primary;
+}
+
+.srots-skeleton {
+    -fx-background-color: -srots-surface-hover;
+    -fx-background-radius: 6px;
+    -fx-min-height: 12px;
+}
+
+.srots-empty-state {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 40px;
+    -fx-alignment: CENTER;
+    -fx-spacing: 12px;
+}
+
+.srots-empty-title,
+.srots-error-title,
+.srots-state-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-empty-description,
+.srots-error-description,
+.srots-state-message {
+    -fx-font-size: 13px;
+    -fx-text-fill: -srots-text-secondary;
+    -fx-wrap-text: true;
+    -fx-text-alignment: CENTER;
+}
+
+.srots-empty-action,
+.srots-error-action {
+    -fx-padding: 8px 0 0 0;
+}
+
+.srots-error-state {
+    -fx-background-color: -srots-danger-soft;
+    -fx-border-color: -srots-danger;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 30px;
+    -fx-alignment: CENTER;
+    -fx-spacing: 12px;
+}
+
+.srots-permission-denied {
+    -fx-background-color: -srots-warning-soft;
+    -fx-border-color: -srots-warning;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 30px;
+    -fx-alignment: CENTER;
+    -fx-spacing: 12px;
+}
+
+.srots-online {
+    -fx-text-fill: -srots-success;
+    -fx-font-weight: bold;
+}
+
+.srots-offline {
+    -fx-text-fill: -srots-warning;
+    -fx-font-weight: bold;
+}
+
+.srots-syncing {
+    -fx-text-fill: -srots-info;
+    -fx-font-weight: bold;
+}
+
+.srots-sync-error {
+    -fx-text-fill: -srots-danger;
+    -fx-font-weight: bold;
+}
+
+.srots-local-changes {
+    -fx-text-fill: -srots-warning;
+    -fx-font-size: 12px;
+}
+
+.srots-data-stale {
+    -fx-text-fill: -srots-warning;
+    -fx-font-size: 12px;
+}
+
+.srots-connection-status {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}

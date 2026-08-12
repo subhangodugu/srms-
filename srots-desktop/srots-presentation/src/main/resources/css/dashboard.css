@@ -1,0 +1,93 @@
+/* SROTS Dashboard Grid Patterns */
+
+.srots-dashboard {
+    -fx-spacing: 16px;
+    -fx-padding: 0;
+}
+
+.srots-overview-header {
+    -fx-spacing: 6px;
+    -fx-padding: 0 0 4px 0;
+}
+
+.srots-overview-kicker {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -srots-text-muted;
+}
+
+.srots-overview-greeting {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-overview-meta {
+    -fx-font-size: 12px;
+    -fx-text-fill: -srots-text-secondary;
+}
+
+.srots-overview-actions {
+    -fx-spacing: 8px;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.srots-overview-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.srots-overview-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+.srots-dashboard-kpi-row {
+    -fx-hgap: 12px;
+    -fx-vgap: 12px;
+}
+
+.srots-dashboard-main {
+    -fx-hgap: 12px;
+    -fx-vgap: 12px;
+}
+
+.srots-dashboard-chart-panel {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: -srots-radius-md;
+    -fx-border-radius: -srots-radius-md;
+    -fx-padding: 16px;
+    -fx-min-height: 220px;
+}
+
+.srots-dashboard-activity {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: -srots-radius-md;
+    -fx-border-radius: -srots-radius-md;
+    -fx-padding: 16px;
+    -fx-min-height: 220px;
+    -fx-pref-width: 360px;
+}
+
+.srots-activity-item {
+    -fx-padding: 10px 0;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 0 0 1px 0;
+    -fx-spacing: 4px;
+}
+
+.srots-activity-title {
+    -fx-text-fill: -srots-text-primary;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.srots-activity-meta {
+    -fx-text-fill: -srots-text-muted;
+    -fx-font-size: 11px;
+}

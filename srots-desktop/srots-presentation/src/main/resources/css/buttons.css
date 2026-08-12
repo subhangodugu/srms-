@@ -1,0 +1,158 @@
+/* SROTS Button System */
+
+.srots-button {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 9px 16px;
+    -fx-cursor: hand;
+}
+
+.srots-primary-button,
+.btn-primary {
+    -fx-background-color: -srots-primary;
+    -fx-text-fill: -srots-primary-on;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 9px 16px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-border-width: 1px;
+}
+
+.srots-primary-button:hover,
+.btn-primary:hover {
+    -fx-background-color: -srots-primary-hover;
+}
+
+.srots-primary-button:pressed,
+.btn-primary:pressed {
+    -fx-background-color: -srots-primary-pressed;
+}
+
+.srots-primary-button:focused,
+.btn-primary:focused {
+    -fx-border-color: -srots-primary-hover;
+}
+
+.srots-primary-button:disabled,
+.btn-primary:disabled {
+    -fx-opacity: 0.45;
+    -fx-cursor: default;
+}
+
+.srots-secondary-button,
+.btn-secondary {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-text-fill: -srots-text-primary;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 9px 16px;
+    -fx-cursor: hand;
+}
+
+.srots-secondary-button:hover,
+.btn-secondary:hover {
+    -fx-background-color: -srots-surface-hover;
+}
+
+.srots-secondary-button:pressed,
+.btn-secondary:pressed {
+    -fx-background-color: -srots-surface-selected;
+}
+
+.srots-secondary-button:disabled,
+.btn-secondary:disabled {
+    -fx-opacity: 0.45;
+    -fx-text-fill: -srots-text-disabled;
+}
+
+.srots-tertiary-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: -srots-primary;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 9px 12px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+}
+
+.srots-tertiary-button:hover {
+    -fx-background-color: -srots-surface-hover;
+}
+
+.srots-tertiary-button:disabled {
+    -fx-opacity: 0.45;
+    -fx-text-fill: -srots-text-disabled;
+}
+
+.srots-danger-button,
+.btn-danger {
+    -fx-background-color: -srots-danger;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 9px 16px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+}
+
+.srots-danger-button:hover,
+.btn-danger:hover {
+    -fx-background-color: #DC2626;
+}
+
+.srots-danger-button:pressed,
+.btn-danger:pressed {
+    -fx-background-color: #B91C1C;
+}
+
+.srots-danger-button:disabled,
+.btn-danger:disabled {
+    -fx-opacity: 0.45;
+}
+
+.srots-icon-button {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-text-fill: -srots-text-primary;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 6px 10px;
+    -fx-min-width: 32px;
+    -fx-min-height: 32px;
+    -fx-pref-width: 32px;
+    -fx-pref-height: 32px;
+    -fx-cursor: hand;
+}
+
+.srots-icon-button:hover {
+    -fx-background-color: -srots-surface-hover;
+}
+
+.srots-icon-button:pressed {
+    -fx-background-color: -srots-surface-selected;
+}
+
+.srots-icon-button:focused {
+    -fx-border-color: -srots-primary;
+}
+
+.srots-icon-button:disabled {
+    -fx-opacity: 0.45;
+}
+
+.srots-button-loading {
+    -fx-opacity: 0.75;
+}

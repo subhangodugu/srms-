@@ -1,0 +1,98 @@
+/* SROTS Global Search overlay */
+
+.srots-search-overlay {
+    -fx-background-color: -srots-surface-elevated;
+    -fx-border-color: -srots-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.30), 14, 0.16, 0, 4);
+}
+
+.srots-search-field {
+    -fx-alignment: CENTER_LEFT;
+}
+
+.srots-search-icon {
+    -fx-text-fill: -srots-text-muted;
+    -fx-font-size: 14px;
+}
+
+.srots-search-field-input {
+    -fx-font-size: 14px;
+}
+
+.srots-search-filters {
+    -fx-spacing: 6px;
+}
+
+.srots-search-filter:selected {
+    -fx-background-color: -srots-surface-selected;
+}
+
+.srots-search-status {
+    -fx-text-fill: -srots-text-muted;
+    -fx-font-size: 12px;
+    -fx-padding: 0 0 6px 0;
+}
+
+.srots-search-results {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.srots-search-results .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 6px 8px;
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-search-results .list-cell:filled:selected,
+.srots-search-results .list-cell:filled:hover {
+    -fx-background-color: -srots-surface-hover;
+}
+
+.srots-search-group {
+    -fx-text-fill: -srots-text-muted;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 4px 4px 4px;
+}
+
+.srots-search-result-title {
+    -fx-text-fill: -srots-text-primary;
+    -fx-font-size: 13px;
+}
+
+.srots-search-result-subtitle {
+    -fx-text-fill: -srots-text-muted;
+    -fx-font-size: 11px;
+}
+
+.srots-search-result-selected {
+    -fx-background-color: -srots-surface-selected;
+}
+
+.srots-search-command {
+    -fx-text-fill: -srots-text-primary;
+}
+
+.srots-search-history {
+    -fx-text-fill: -srots-text-secondary;
+}
+
+.srots-search-empty {
+    -fx-text-fill: -srots-text-muted;
+}
+
+.srots-search-footer {
+    -fx-text-fill: -srots-text-muted;
+}
+
+.srots-search-loading .srots-search-status {
+    -fx-text-fill: -srots-info;
+}
+
+.srots-search-error .srots-search-status {
+    -fx-text-fill: -srots-warning;
+}
