@@ -3,17 +3,20 @@ package com.srots.presentation.shell.topbar;
 import com.srots.presentation.app.MainViewController;
 import com.srots.presentation.components.navigation.topbar.SrotsConnectionState;
 import com.srots.presentation.components.navigation.topbar.SrotsTopBar;
-import com.srots.presentation.components.utility.icons.SrotsIcon;
 import com.srots.presentation.components.support.JavaFxTestSupport;
+import com.srots.presentation.components.utility.icons.SrotsIcon;
 import com.srots.presentation.navigation.NavigationModule;
 import com.srots.presentation.navigation.model.NavigationRouteId;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.Label;
+import javafx.scene.layout.HBox;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.net.URL;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -41,13 +44,23 @@ class SrotsTopBarSmokeTest {
                 MainViewController controller = loader.getController();
                 NavigationModule module = NavigationModule.createDefault(controller.getContentArea());
                 controller.attachNavigation(module);
+                controller.applyEnvironmentChrome(false, "development", "MOCK", "0.1.0");
 
                 SrotsTopBar topBar = controller.getTopBar();
                 assertNotNull(topBar);
                 assertTrue(topBar.getStyleClass().contains("srots-topbar"));
+                assertEquals(60, topBar.getPrefHeight(), 0.1);
+                assertEquals("SROTS", topBar.getBrandLabel().getText());
+                assertTrue(topBar.getBrandLabel().getStyleClass().contains("srots-topbar-brand"));
+                assertNotNull(topBar.getBrandDivider());
+                assertTrue(topBar.getBrandDivider().getStyleClass().contains("srots-topbar-divider"));
                 assertNotNull(topBar.getSearchField());
+                assertTrue(topBar.getSearchField().getStyleClass().contains("srots-topbar-search"));
+                assertEquals("Ctrl K", topBar.getSearchField().getShortcutChip().getText());
+                assertTrue(topBar.getSearchField().getShortcutChip().isVisible());
                 assertNotNull(topBar.getUserProfile());
                 assertNotNull(topBar.getConnectionIndicator());
+                assertEquals("Connected", topBar.getConnectionIndicator().getText());
                 assertNotNull(topBar.lookup(".srots-topbar-notifications"));
                 assertNotNull(topBar.lookup(".srots-window-controls"));
                 assertEquals("Minimize", topBar.getWindowControls().getMinimizeButton().getAccessibleText());
@@ -55,6 +68,22 @@ class SrotsTopBarSmokeTest {
                 assertEquals("X", topBar.getWindowControls().getCloseButton().getText());
                 assertTrue(topBar.getWindowControls().getCloseButton().getStyleClass()
                         .contains("srots-window-control-close"));
+
+                Label env = topBar.getEnvLabel();
+                assertTrue(env.isVisible());
+                assertEquals("DEVELOPMENT", env.getText());
+                assertTrue(env.getStyleClass().contains("srots-env-dev"));
+
+                HBox right = topBar.getRightCluster();
+                List<Node> rightChildren = right.getChildren();
+                assertTrue(rightChildren.indexOf(topBar.getConnectionIndicator())
+                        < rightChildren.indexOf(topBar.getNotificationSlot()));
+                assertTrue(rightChildren.indexOf(topBar.getNotificationSlot())
+                        < rightChildren.indexOf(topBar.getUserProfile()));
+                assertTrue(rightChildren.indexOf(topBar.getUserProfile())
+                        < rightChildren.indexOf(env));
+                assertTrue(rightChildren.indexOf(env)
+                        < rightChildren.indexOf(topBar.getWindowControls()));
 
                 module.navigationService().navigate(NavigationRouteId.OVERVIEW);
                 assertEquals("Overview", controller.getTopBarViewModel().getPageTitle());
@@ -78,7 +107,7 @@ class SrotsTopBarSmokeTest {
                 javafx.scene.layout.Region slot =
                         (javafx.scene.layout.Region) topBar.lookup(".srots-topbar-notification-slot");
                 assertNotNull(slot);
-                assertEquals(32, slot.getMaxHeight(), 0.1);
+                assertEquals(36, slot.getMaxHeight(), 0.1);
 
                 controller.getTopBarApplicationState().setNotificationCount(0);
                 assertFalse(topBar.getNotificationsButton().getStyleClass()
@@ -90,6 +119,7 @@ class SrotsTopBarSmokeTest {
 
                 controller.getTopBarApplicationState().setConnectionState(SrotsConnectionState.OFFLINE);
                 assertEquals(SrotsConnectionState.OFFLINE, topBar.getConnectionIndicator().getState());
+                assertEquals("Disconnected", topBar.getConnectionIndicator().getText());
                 assertTrue(topBar.getStyleClass().contains("srots-topbar"));
             } catch (Exception ex) {
                 throw new RuntimeException(ex);

@@ -50,7 +50,7 @@ class SrotsStatusBarSmokeTest {
 
                 controller.getTopBarApplicationState().setConnectionState(SrotsConnectionState.OFFLINE);
                 assertEquals(SrotsStatusBarState.OFFLINE, controller.getStatusBarViewModel().getBarState());
-                assertEquals("Offline", statusBar.getConnectionIndicator().getText());
+                assertEquals("Disconnected", statusBar.getConnectionIndicator().getText());
 
                 controller.getActivityService().publish(ApplicationActivity.builder(ApplicationActivityType.SYNCING)
                         .message("Synchronizing...")
